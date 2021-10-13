@@ -1,0 +1,11 @@
+version: "2.2"
+ 
+services:
+  asir-web:
+    image: httpd
+    ports:
+    - 9000:80 
+    volumes:
+    - ./cosas:/usr/local/apache2/htdocs/
+
+
